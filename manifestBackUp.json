@@ -1,0 +1,29 @@
+﻿{
+  "name": "Lenny Extension",
+  "version": "1.0",
+  "description": "Lenny Description",
+  "manifest_version": 2,
+  "icons": {
+    "48": "images/lz48px.png",
+    "128": "images/lz128px.png"
+  },
+  "permissions": [ "contextMenus" ],
+
+  "background": {
+    "scripts": [ "scripts/backgroundPage.js" ],
+    "persistent":  false
+  },
+
+  "content_scripts": [
+    {
+      "matches": [ "<all_urls>" ],
+      "js": ["./scripts/contentScript.js"]
+    }
+  ],
+
+  "browser_action": {
+    "default_icon": "images/lz128px.png",
+    "default_title": "Lenny Pop",
+    "default_popup": "popup.html"
+  }
+}

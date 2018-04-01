@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Extension Title</title>
+    <link rel=stylesheet type=text/css href="./styles/popupStyle.css">
+    <meta charset="utf-8">
+</head>
+<body>
+ <div id="main">
+    <!--Header and title-->
+    <div id="titleBar">
+        <span id="title">Yet another Lenny</span>
+        <img src="images/options.png" id="optionsButton" alt="Properties" />
+    </div>
+    <!--Holder for the showMessage function-->
+    <div id="messageDiv"></div>
+    <!--Options page-->
+    <div id="optionsDiv">
+        <table>
+            <!--
+            <tr>
+                <td colspan="2">
+                    <span id="editListOfLenny" class="disabled">
+                        Edit the list
+                    </span>
+                    <div id="editorDiv">
+                        <div id="createNewListDiv">
+                            <span id="createNewListSpan">
+                                Create new custom list
+                            </span>
+                            <div>
+                                <input id="createNewListInput" type="text" />
+                                <br />
+                                <input id="createNewListButton" type="button" value="Create" />
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+                -->
+            <tr>
+                <td>
+                    <label for="showCopiedInformationDialogue">
+                        Show copied information screen
+                    </label>
+                </td>
+                <td>
+                    <input type="checkbox" id="showCopiedInformationDialogue" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="quickLoad">
+                        Quick Load (No animation)
+                    </label>
+                </td>
+                <td>
+                    <input type="checkbox" id="quickLoad" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="closeExtensionAfterSelection">
+                        Cloe extension pupup after copying an item
+                    </label>
+                </td>
+                <td>
+                    <input type="checkbox" id="closeExtensionAfterSelection" />
+                </td>
+            </tr>
+        </table>
+        <hr />
+        <div id="credits">
+            Credits go to <a href="https://github.com/maxogden/cool-ascii-faces">cool-ascii-faces on github by maxogden</a> for creating this awesome list.
+            <br />
+            Go check them out and give them some credit!
+            <br />
+            I only put the list in a convenient to use extension.
+        </div>
+    </div>
+    <!--Main div populated with the lenny-->
+    <main>
+    </main>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/popupScript.js"></script>
+</div>
+</body>
+</html>
